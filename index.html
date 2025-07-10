@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leitor de Livros com Voz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Leitor de Livros com Narração</h1>
+      <button id="themeToggle" class="theme-toggle">Dark</button>
+    </div>
+    <textarea id="textInput" placeholder="Cole aqui o texto do seu livro..."></textarea>
+    <div id="textDisplay" class="text-display">Cole aqui o texto do seu livro...</div>
+    
+    <div class="controls">
+      <button onclick="startReading()">Ler</button>
+      <button onclick="pauseReading()">Pausar</button>
+      <button onclick="resumeReading()">Retomar</button>
+      <button onclick="stopReading()">Parar</button>
+      <select id="speedControl" onchange="changeSpeed()">
+        <option value="0.5">0.5x</option>
+        <option value="1" selected>1x</option>
+        <option value="1.5">1.5x</option>
+        <option value="2">2x</option>
+        <option value="2.5">2.5x</option>
+        <option value="3">3x</option>
+      </select>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
